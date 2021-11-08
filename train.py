@@ -36,7 +36,7 @@ class Logistic(nn.Module):
 
 class Logisticmodule:
     def __init__(self, featureSize, device,
-                  learning_rate, #regularize
+                  learning_rate,
                  ):
         self.module = Logistic(featureSize, 1)
         self.moduleInitial(self.module, device, learning_rate)
@@ -118,7 +118,7 @@ def updateWeight(condition, ceilAlphaK, cur_w, al_w, pre_w):
     
     
 def limitFunc(alpha, T):
-    return (1 - alpha) * T
+    return T - alpha * T
 
 
 def trainModule(dsetName, featureSize, alpha, epochs, learning_rate, 
