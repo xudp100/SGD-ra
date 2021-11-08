@@ -1,7 +1,7 @@
-# Introduction
+## Introduction
 This is the implementation of the SGD-![](http://latex.codecogs.com/svg.latex?r\\alpha) algorithm.
 
-# Installation
+## Installation
 We assume that you're using [Python 3.6+](https://www.python.org/downloads/) with [pip](https://pip.pypa.io/en/stable/installing/) installed. You need to run the following inside the root directory to install the dependencies:
 
 ```bash
